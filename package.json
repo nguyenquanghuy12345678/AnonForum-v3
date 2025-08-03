@@ -1,0 +1,45 @@
+{
+  "name": "anonforum-free",
+  "version": "1.0.0",
+  "description": "Anonymous forum - Free version for PaaS deployment",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3000 -o",
+    "build": "echo 'No build step needed for static site'",
+    "start": "npx http-server -p 8080",
+    "test": "echo 'No tests configured'",
+    "deploy:vercel": "npx vercel --prod",
+    "deploy:netlify": "npx netlify deploy --prod --dir .",
+    "deploy:surge": "npx surge . anonforum-demo.surge.sh"
+  },
+  "keywords": [
+    "anonymous",
+    "forum",
+    "discussion",
+    "privacy",
+    "free",
+    "static",
+    "frontend-only"
+  ],
+  "author": "AnonForum Team",
+  "license": "MIT",
+  "homepage": "https://github.com/username/anonforum-free",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/anonforum-free.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/anonforum-free/issues"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
